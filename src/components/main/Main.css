@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+h4{
+  padding: 0;
+  text-decoration: none;
+}
+.container {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.cartimg {
+  max-width: 300px;
+  height: 250px;
+}
+.cart1 {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: 8px;
+}
+.cart_cart {
+  background-color: rgb(54, 55, 64, 0.1);
+  max-width: 300px;
+  width: 100%;
+  border: 3px solid #7000ff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.title {
+  padding-top: 10px;
+  /* padding-left: 20px; */
+  font-family: sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.textt {
+  padding-left: 20px;
+}
+.price {
+  padding-bottom: 0;
+  padding-top: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(17 24 3);
+  font-weight: 500px;
+}
+.hours {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-bottom: 20px;
+  color: rgb(107 114 128);
+}
+
+button {
+  box-shadow: 0 0 1px 5px rgba(137, 161, 177, 0.815);
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  position: relative;
+  padding: 10px 75px;
+  border-radius: 7px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  border: none;
+  color: #000;
+  overflow: hidden;
+  box-shadow: 0 0 0 1 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.add {
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+button:hover {
+  background: #7000ff;
+  box-shadow: 0 0 3px 5px rgba(137, 161, 177, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #fff;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+a{
+  text-decoration: none;
+}
